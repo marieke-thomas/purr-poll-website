@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Which cat is better?</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="#intro">Top</a>
+    <a href="#angle">Angle</a>
+    <a href="#hera">Hera</a>
+    <a href="#formBox">Vote</a>
+  </div>
+  <div class="box intro" id="intro">
+
+    <h1 class="center">🐾 The Purr Poll 🐾</h1>
+    <h3 class="center">Marisa Shuman && Marieke Thomas</h3>
+
+  </div>
+
+  <div class="box info">
+
+    <h2>Take a few minutes to learn about our two adorable kitties. Then vote on which furry baby you think is best!
+    </h2>
+
+  </div>
+
+  <div class="box angle flex" id="angle">
+
+    <div>
+      <h1>Angle Shuman</h1>
+      <h3>Age: 7.5 years old</h3>
+      <h3>Birthday: March 18</h3>
+      <h3>Likes</h3>
+      <ul>
+        <li>Sitting on a blanket hammock</li>
+        <li>Playing with plastic straws</li>
+        <li>Watching the birds</li>
+        <li>Running around the apartment</li>
+      </ul>
+    </div>
+
+    <div>
+      <img id="angle-pic" src="anglePic.jpg" alt="angle-pic" />
+    </div>
+
+    <div>
+      <video width="320" height="240" controls>
+        <source src="angleVid.MP4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+
+  <div class="box hera flex" id="hera">
+
+    <div><img src="HeraBox.jpg" alt="Hera sitting in a puzzle box" class="pic"></div>
+    <div><img src="HeraPaw.jpg" alt="5 more minutes, please" class="pic"></div>
+    <div>
+      <h1>Hera Thomas</h1>
+      <h3>Age: 11 years old</h3>
+      <h3>Birthday: March 2</h3>
+      <h3>Likes</h3>
+      <ul>
+        <li>Licking plastic bags</li>
+        <li>Chasing twist ties</li>
+        <li>Drinking from the faucet</li>
+        <li>Throwing up precisely on the carpet</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="box form" id="formBox">
+    <div class="center-div">
+      <h2>Time for you to pick!</h2>
+      <p>Which cat is better, cuter, more amazing?</p>
+      <form action="/results">
+          <input type="radio" id="html" name="best_cat" value="Angle">
+          <label for="angle">Angle</label><br>
+          <input type="radio" id="css" name="best_cat" value="Hera">
+          <label for="hera">Hera</label><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
